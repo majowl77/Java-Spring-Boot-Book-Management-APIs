@@ -57,7 +57,7 @@ public class BookController implements IBookController {
 
     // --------------- PATCH updating a single column or a single attribute ------------
     @PatchMapping("/books/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)// 204
     public void updateBookTitle(@RequestBody @Valid BookTitleDTO bookTitleDTO, @PathVariable Integer id){
         bookService.updateBookTitle(bookTitleDTO.getTitle(), id);
 

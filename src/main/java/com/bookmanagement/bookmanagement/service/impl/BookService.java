@@ -5,11 +5,9 @@ import com.bookmanagement.bookmanagement.model.Book;
 import com.bookmanagement.bookmanagement.repository.BookRepository;
 import com.bookmanagement.bookmanagement.service.interfaces.IBookService;
 
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Optional;
