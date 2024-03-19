@@ -19,11 +19,11 @@ class BookRepositoryTest {
     @Autowired
     BookRepository bookRepository;
 
-//    @BeforeEach
-//    public void setUp(){
-//        Book alice = new Book(4,"Alice's Adventures in Wonderland","Lewis Carroll", 1865, "english", BigDecimal.valueOf(23), 200);
-//        bookRepository.save(alice);
-//    }
+    @BeforeEach
+    public void setUp(){
+        Book alice = new Book(4,"Alice's Adventures in Wonderland","Lewis Carroll", 1865, "english", BigDecimal.valueOf(23), 200);
+        bookRepository.save(alice);
+    }
 
     @AfterEach
     public void tearDown(){
@@ -36,20 +36,20 @@ class BookRepositoryTest {
         System.out.println(bookList);
     }
 
-//    @Test
-//    public void findById_validId_correctBook(){
-//        Optional<Book> bookOptional = bookRepository.findById(2);
-//        boolean isPresent = bookOptional.isPresent();
-//        if(isPresent) System.out.println(" **** the value exist ****"+ bookOptional.get().getTitle());
-//        System.out.println("the value is not exist");
-//    }
+    @Test
+    public void findById_validId_correctBook(){
+        Optional<Book> bookOptional = bookRepository.findById(2);
+        boolean isPresent = bookOptional.isPresent();
+        if(isPresent) System.out.println(" **** the value exist ****"+ bookOptional.get().getTitle());
+        System.out.println("the value is not exist");
+    }
 
-//    @Test
-//    public void findByTitle_validTitle_correctBook(){
-//        Optional<Book> bookOptional = bookRepository.findByTitle("Moby Dick");
-//        assertTrue(bookOptional.isPresent());
-//        System.out.println(bookOptional.get());
-//        assertEquals("english", bookOptional.get().getLanguage());
-//    }
+    @Test
+    public void findByTitle_validTitle_correctBook(){
+        Optional<Book> bookOptional = bookRepository.findByTitle("Moby Dick");
+        assertTrue(bookOptional.isPresent());
+        System.out.println(bookOptional.get());
+        assertEquals("english", bookOptional.get().getLanguage());
+    }
 
 };

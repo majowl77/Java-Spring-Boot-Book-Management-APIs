@@ -43,7 +43,7 @@ public class BookController implements IBookController {
     @PostMapping("/books")
     @ResponseStatus(HttpStatus.CREATED) // 201
     public void createNewBook(@RequestBody @Valid Book book){
-        bookRepository.save(book);
+        bookService.createNewBook(book);
     }
 
 
