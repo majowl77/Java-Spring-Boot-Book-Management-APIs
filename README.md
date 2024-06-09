@@ -3,6 +3,7 @@
 ## Overview
 The Book Inventory API is a RESTful web service developed with Spring Boot to manage a collection of books. It offers endpoints for performing CRUD (Create, Read, Update, Delete) operations on book records.
 
+
 ## More Details
 - ***Add, update, delete, and view book details.***
 - ***Exposes REST endpoints for interacting with the system programmatically.***
@@ -14,6 +15,8 @@ The Book Inventory API is a RESTful web service developed with Spring Boot to ma
 - Spring Data JPA
 - PostgreSQL
 - Gradlew
+
+
 
 ## API Endpoints
 ``` 
