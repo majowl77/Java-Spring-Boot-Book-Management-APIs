@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class BookController implements IBookController {
 
     // we use this to have access to our DB data, and it needs to be autowired
