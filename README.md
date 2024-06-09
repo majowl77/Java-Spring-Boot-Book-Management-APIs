@@ -1,7 +1,7 @@
 # Book Management API
 
 ## Overview
-The Book Management API is a RESTful web service developed with Spring Boot to manage a collection of books. It offers endpoints for performing CRUD (Create, Read, Update, Delete) operations on book records.
+A Book Management API is a RESTful web service developed with Spring Boot to manage a collection of books. It offers endpoints for performing CRUD (Create, Read, Update, Delete) operations on book records.
 
 
 ## More Details
